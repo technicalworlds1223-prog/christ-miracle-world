@@ -1,0 +1,515 @@
+body {
+    
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(to bottom,#081427,#0b1d3a);
+    color:white;
+}
+
+/* HEADER */
+.navbar{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(15px);
+border-bottom:1px solid rgba(255,255,255,0.2);
+z-index:1000;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo img{
+width:45px;
+}
+
+
+.navbar a {
+    color:#d4af37;
+    margin-left:20px;
+    text-decoration:none;
+}
+
+.hero {
+    height:100vh;
+    background:url('../images/bg.jpg') no-repeat center center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1 { color:#f6f8f7; font-size:30px; text-shadow: #081427;}
+
+.section { padding:100px 10%; text-align:center; }
+
+.dark { background:#081427; }
+
+.btn-gold {
+    background:#d4af37;
+    color:#081427;
+    padding:15px 35px;
+    border-radius:40px;
+    border:none;
+    cursor:pointer;
+    margin:10px;
+    transition:0.3s;
+}
+
+.btn-gold:hover { transform:scale(1.1); }
+
+.donation-box {
+    background:#0b1d3a;
+    padding:40px;
+    border-radius:20px;
+    max-width:500px;
+    margin:auto;
+    box-shadow:0 0 25px rgba(212,175,55,0.4);
+}
+
+.qr-image { width:200px; margin-top:20px; }
+
+.gallery {
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.gallery img {
+    width:30%;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.modal {
+    display:none;
+    position:fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    background:rgba(0,0,0,0.9);
+    justify-content:center;
+    align-items:center;
+}
+
+.modal img { max-width:80%; }
+
+.whatsapp-float {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    font-size:22px;
+    text-decoration:none;
+}
+.donation-section {
+    text-align:center;
+}
+
+.donation-box {
+    background:#0b1d3a;
+    padding:40px;
+    border-radius:20px;
+    max-width:500px;
+    margin:auto;
+    box-shadow:0 0 25px rgba(212,175,55,0.3);
+}
+
+.donate-btn {
+    display:inline-block;
+    margin-top:20px;
+    font-size:18px;
+}
+
+.qr-image {
+    width:200px;
+    margin-top:20px;
+    border-radius:15px;
+}
+/* ================= PRAYER SECTION ================= */
+
+.section form {
+    max-width: 600px;
+    margin: 40px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section input,
+.section textarea {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid #d4af37;
+    background: #0b1d3a;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.section input::placeholder,
+.section textarea::placeholder {
+    color: #cccccc;
+}
+
+.section input:focus,
+.section textarea:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 10px rgba(212,175,55,0.6);
+}
+
+.section textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+.section form button {
+    align-self: center;
+    margin-top: 10px;
+}
+
+/* Prayer section background glow */
+.section.dark {
+    background: linear-gradient(to right, #081427, #0b1d3a);
+}
+
+/* Heading style improvement */
+.section.dark h2 {
+    color: #d4af37;
+    font-size: 32px;
+}
+/* ===== SCROLLABLE GALLERY ===== */
+
+.gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+}
+
+.gallery img {
+    
+    flex: 0 0 auto;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Custom Scrollbar */
+.gallery::-webkit-scrollbar {
+    height: 8px;
+}
+
+.gallery::-webkit-scrollbar-track {
+    background: #081427;
+}
+
+.gallery::-webkit-scrollbar-thumb {
+    background: #d4af37;
+    border-radius: 10px;
+}
+
+.card{
+background:rgba(255,255,255,0.1);
+padding:20px;
+border-radius:15px;
+text-align:center;
+}
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:12px 20px; /* reduced padding */
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(15px);
+border-bottom:1px solid rgba(255,255,255,0.2);
+z-index:1000;
+flex-wrap:wrap; /* important */
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:8px;
+}
+
+.logo h2{
+font-size:18px;
+white-space:nowrap; /* prevent break */
+}
+
+nav{
+overflow-x:auto; /* allows scroll if needed */
+}
+
+nav ul{
+display:flex;
+gap:15px;
+list-style:none;
+padding:0;
+margin:0;
+flex-wrap:wrap; /* prevents cut */
+}
+
+nav ul li a{
+color:#fff;
+text-decoration:none;
+font-size:14px;
+white-space:nowrap;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav ul li a{
+color:#fff;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#ffcc00;
+}
+.video-card{
+text-decoration:none;
+color:#fff;
+background:rgba(255,255,255,0.1);
+padding:15px;
+border-radius:15px;
+transition:0.3s;
+}
+
+.video-card img{
+width:100%;
+border-radius:15px;
+height:200px;
+object-fit:cover;
+margin-bottom:10px;
+}
+
+.video-card:hover{
+transform:translateY(-5px);
+box-shadow:0 0 20px rgba(255,0,0,0.6);
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.glass{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(15px);
+border-radius:20px;
+padding:40px;
+border:1px solid rgba(255,255,255,0.2);
+box-shadow:0 8px 32px rgba(0,0,0,0.5);
+margin-bottom:40px;
+}
+footer{
+    text-align: center;
+}
+.hero-btn{
+display:inline-block;
+padding-right: 30px;
+color:#fff;
+font-weight:600;
+border-radius:40px;
+text-decoration:none;
+transition:0.4s;
+}
+
+.hero-btn:hover{
+transform:translateY(-5px);
+}
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+align-items:center;
+padding:10px;
+}
+
+.logo h2{
+font-size:16px;
+}
+
+nav ul{
+justify-content:center;
+gap:10px;
+}
+
+nav ul li a{
+font-size:13px;
+}
+
+}
+/* LONG ABOUT SECTION */
+
+.about-section{
+background:linear-gradient(135deg,#0a1f44,#001a33);
+padding:120px 20px;
+color:#fff;
+}
+
+.about-wrapper{
+max-width:1200px;
+margin:auto;
+}
+
+.about-main-title{
+text-align:center;
+font-size:38px;
+color:#ffcc00;
+margin-bottom:40px;
+}
+
+.about-intro{
+text-align:center;
+max-width:900px;
+margin:0 auto 60px;
+line-height:1.8;
+font-size:17px;
+}
+
+.about-row{
+display:flex;
+align-items:center;
+gap:50px;
+margin-bottom:80px;
+flex-wrap:wrap;
+}
+
+.about-row.reverse{
+flex-direction:row-reverse;
+}
+
+.about-img{
+flex:1;
+}
+
+.about-img img{
+width:100%;
+border-radius:20px;
+box-shadow:0 15px 40px rgba(0,0,0,0.6);
+}
+
+.about-text{
+flex:1;
+}
+
+.about-text h3{
+color:#ffcc00;
+margin-bottom:15px;
+font-size:26px;
+}
+
+.about-text p{
+line-height:1.8;
+font-size:16px;
+}
+
+.bible-highlight{
+margin-top:25px;
+background:linear-gradient(45deg,#ffcc00,#d4af37);
+color:#000;
+padding:20px;
+border-radius:15px;
+font-style:italic;
+box-shadow:0 8px 30px rgba(255,204,0,0.4);
+}
+
+.ministry-section{
+text-align:center;
+margin-top:40px;
+}
+
+.ministry-section h3{
+color:#ffcc00;
+margin-bottom:25px;
+font-size:28px;
+}
+
+.ministry-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.ministry-grid div{
+background:rgba(255,255,255,0.1);
+padding:18px;
+border-radius:15px;
+transition:0.3s;
+}
+
+.ministry-grid div:hover{
+background:rgba(255,204,0,0.2);
+transform:translateY(-5px);
+}
+
+/* MOBILE */
+@media(max-width:768px){
+.about-row{
+flex-direction:column;
+text-align:center;
+}
+.about-main-title{
+font-size:28px;
+}
+}
+/* Hide Scrollbar - Works in Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+/* Firefox */
+html {
+    scrollbar-width: none;
+}
+
+/* IE */
+body {
+    -ms-overflow-style: none;
+}
+.social-icons{
+display:flex;
+justify-content:center;
+gap:25px;
+margin-bottom:20px;
+}
+
+.social-icons img{
+width:32px;
+transition:0.3s;
+}
+
+.social-icons img:hover{
+transform:scale(1.2);
+}

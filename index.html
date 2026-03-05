@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christ Miracle World</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+</head>
+<body>
+
+<header>
+<div class="logo">
+<img src="./images/CMW.jpg" style="width:45px;">
+<h2>Christ Miracle World</h2>
+</div>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="sermons.html">Sermons</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="ministries.html">Ministries</a></li>
+
+<li>
+<a href="https://youtube.com/@ChristMiracleWorld" target="_blank" class="hero-btn">
+<img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" width="30">
+</a>
+</li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content" data-aos="fade-up">
+        <h1>BELIEF IN GOD AS FATHER AND HOLY SPIRIT IS AT THE HEART OF OUR FAITH.</h1>
+        <p>God has revealed himself through the Bible.God has revealed himself most clearly through  the gift of his Son,Jesus Christ.God makes himself known personally to each believer through the Work of the Holy Spirit. </p>
+        <a href="#prayer" class="btn-gold">Join Us This Sunday</a>
+    </div>
+</section>
+
+<section class="section" data-aos="fade-right">
+    <h2>Who We Are</h2>
+    <p>
+        Christ Miracle World is a Spirit-led, Bible-centered ministry dedicated
+        to revealing the glory of God to this generation.
+        We believe miracles are not history — they are reality.
+    </p>
+</section>
+
+<!-- DONATION SECTION -->
+<section class="section dark donation-section">
+    <h2>Support The Ministry</h2>
+    <p>
+        Your generous giving helps us spread the Gospel, support outreach programs,
+        and bring hope to communities. Partner with Christ Miracle World today.
+    </p>
+
+    <div class="donation-box">
+        <h3>Donate via UPI / PhonePe</h3>
+
+        <!-- UPI Button -->
+        <a href="upi://pay?pa=8247687048@ybl&pn=Christ%20Miracle%20World&cu=INR"
+           class="btn-gold donate-btn">
+           Donate Now
+        </a>
+
+        <p class="upi-id">UPI ID: <strong>8247687048@ybl</strong></p>
+
+        <!-- QR Code Image -->
+        <img src="./images/upi-qr.jpg" alt="Scan & Pay QR" class="qr-image">
+
+        <p>Scan the QR code using PhonePe / Google Pay / Paytm</p>
+    </div>
+</section>
+
+<section id="gallery" class="section" data-aos="zoom-in">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="./images/image2.jpeg" onclick="openModal(this.src)">
+        <img src="./images/image8.png" onclick="openModal(this.src)">
+        <img src="./images/image3.jpeg" onclick="openModal(this.src)">
+        
+    </div>
+    <div class="gallery">
+        <img src="./images/dinner.jpeg" onclick="openModal(this.src)">
+        <img src="./images/sriram.jpeg" onclick="openModal(this.src)">
+        <img src="./images/prayer.jpeg" onclick="openModal(this.src)">
+     </div>
+</section>
+<section id="events" class="section">
+<div class="glass">
+<h2>Upcoming Events</h2>
+<div class="grid">
+<div class="card">Sunday Worship – 9:00 AM</div>
+<div class="card">Friday Prayer – 7:00 PM</div>
+<div class="card">Youth Fellowship – Saturday</div>
+</div>
+</div>
+</section>
+
+<section id="prayer" class="section dark">
+    <h2>Submit Prayer Request</h2>
+    <form onsubmit="sendWhatsApp(); return false;">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <textarea id="request" placeholder="Your Prayer Request" required></textarea>
+        <button class="btn-gold">Send via WhatsApp</button>
+    </form>
+</section>
+<footer>
+<iframe 
+src="https://www.google.com/maps?q=Shiloh%20Church%20Saradhi%20Nagar%20Khammam%20507003&output=embed"
+width="100%" height="300"
+style="border-radius:15px;"
+allowfullscreen>
+</iframe>
+
+<h3>📍 Church Address:</h3>
+<p>
+<strong>Shiloh Church</strong><br>
+Saradhi Nagar,<br>
+Khammam,<br>
+Telangana – 507003<br>
+India
+</p>
+
+
+
+<div class="social-icons">
+
+<a href="https://www.instagram.com/christmiracleworld/" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+</a>
+
+<a href="https://m.facebook.com/113126416754269/" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+</a>
+
+<a href="https://youtube.com/@christmiracleworld?si=fWnvjZQWdBr8su0R" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png">
+</a>
+
+</div>
+© 2026 Christ Miracle World | Glory to God ✝️
+</footer>
+
+
+<div id="modal" class="modal" onclick="closeModal()">
+    <img id="modal-img">
+</div>
+
+<a href="https://wa.me/917396307396" class="whatsapp-float" target="_blank">💬</a>
+
+<script src="js/script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+</body>
+</html>
